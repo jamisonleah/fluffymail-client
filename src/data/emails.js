@@ -5,6 +5,8 @@ const emails = [
     body: "Hello there!\n\nWe’re so excited to have you in our cozy little corner of the internet. FluffyMail was designed with comfort and simplicity in mind, so you can enjoy a clutter-free inbox with a touch of bunny charm. Whether you’re sending important messages or just hopping in to say hi to a friend, we’ve got everything you need to make emailing feel warm and fuzzy.\n\nIf you ever need help, have suggestions, or just want to share your favorite type of carrot, we’re only a message away. Until then, enjoy fluffing up your folders and making this space your own.\n\nWarm wishes,\nThe FluffyMail Team 🐇",
     date: "2025-04-11T10:32:00Z",
     isRead: false,
+    folder: "inbox",
+    tags: ["welcome", "introduction"],
     sender: {
       name: "FluffyMail Team",
       email: "welcome@fluffymail.com",
@@ -17,6 +19,8 @@ const emails = [
     body: "Your carrot stock is full and fresher than ever. We've just delivered a fresh batch straight to your inbox — crunchy, vibrant, and packed with that earthy sweetness every bunny loves.\n\nBe sure to check your delivery history and tag your favorite varieties so we can keep those munchies coming! Need to pause or modify your subscription? Hop into your settings anytime.",
     date: "2025-04-10T09:15:00Z",
     isRead: false,
+    folder: "inbox",
+    tags: ["weekly", "report"],
     sender: {
       name: "Bunny Bot",
       email: "noreply@veggiesupply.co",
@@ -29,6 +33,8 @@ const emails = [
     body: "We noticed a login from a new burrow. If this wasn't you, please burrow-proof your account.",
     date: "2025-04-09T22:01:00Z",
     isRead: false,
+    folder: "inbox",
+    tags: ["security", "alert"],
     sender: {
       name: "FluffyMail Security",
       email: "security@fluffymail.com",
@@ -41,6 +47,8 @@ const emails = [
     body: "Hi there! Just hopping by to say hello. Let’s catch up soon! 🐇",
     date: "2025-04-08T13:47:00Z",
     isRead: true,
+    folder: "favorites",
+    tags: ["friend", "personal"],
     sender: {
       name: "Finn Mertens",
       email: "finn.mertens@burrowmail.net",
@@ -53,6 +61,8 @@ const emails = [
     body: "Keep your inbox fresh! Try archiving old messages and dusting off your folders.",
     date: "2025-04-07T08:30:00Z",
     isRead: true,
+    folder: "inbox",
+    tags: ["tips", "organization"],
     sender: {
       name: "FluffyMail Tips",
       email: "help@fluffymail.com",
@@ -65,6 +75,8 @@ const emails = [
     body: "You've unlocked a surprise reward: a digital carrot badge for inbox organization!",
     date: "2025-04-06T11:05:00Z",
     isRead: true,
+    folder: "inbox",
+    tags: ["reward", "monthly"],
     sender: {
       name: "Bunny Rewards",
       email: "rewards@fluffymail.com",
@@ -77,6 +89,8 @@ const emails = [
     body: "Your order from Cozy Nest is on the way! 🧺 Estimated arrival: April 12.",
     date: "2025-04-05T16:22:00Z",
     isRead: true,
+    folder: "inbox",
+    tags: [],
     sender: {
       name: "Cozy Nest Co.",
       email: "orders@cozynest.store",
@@ -89,6 +103,8 @@ const emails = [
     body: "We’ll be burrowing into some backend improvements on April 13 between 1am–4am. Expect brief downtime.",
     date: "2025-04-04T10:00:00Z",
     isRead: true,
+    folder: "important",
+    tags: ["maintenance", "important"],
     sender: {
       name: "FluffyMail Support",
       email: "support@fluffymail.com",
@@ -101,6 +117,8 @@ const emails = [
     body: "Join us this month as we read *The Velveteen Rabbit*. First meeting is April 15!",
     date: "2025-04-03T18:45:00Z",
     isRead: true,
+    folder: "favorites",
+    tags: ["club", "reading"],
     sender: {
       name: "Book Bunnies",
       email: "club@burrowbooks.org",
@@ -113,6 +131,8 @@ const emails = [
     body: "Haven’t updated your password in a while? It’s a good time to refresh those credentials.",
     date: "2025-04-02T07:30:00Z",
     isRead: true,
+    folder: "important",
+    tags: ["security", "reminder"],
     sender: {
       name: "Fluffy Security",
       email: "security@fluffymail.com",
@@ -125,6 +145,8 @@ const emails = [
     body: "We’d love your feedback on the FluffyMail experience. It takes just 2 minutes!",
     date: "2025-04-01T12:00:00Z",
     isRead: true,
+    folder: "inbox",
+    tags: ["survey", "feedback"],
     sender: {
       name: "Fluffy Feedback",
       email: "feedback@fluffymail.com",
@@ -137,6 +159,8 @@ const emails = [
     body: "Everything is sorted and tagged beautifully. You’re doing amazing!",
     date: "2025-03-31T15:20:00Z",
     isRead: true,
+    folder: "favorites",
+    tags: ["motivation", "inspiration"],
     sender: {
       name: "Burrow Assistant",
       email: "bot@fluffymail.com",

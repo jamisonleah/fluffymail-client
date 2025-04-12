@@ -9,6 +9,9 @@ const lilita_one = Lilita_One({ subsets: ['latin'], weight: '400', variable: '--
 export const metadata = {
   title: "FluffyMail",
   description: "A cozy bunny-themed secure mail server",
+  icons: {
+    icon: "icons/kawaii/kawaii-bunny.png",
+  },
 };
 
 export default function RootLayout({ children }) {
