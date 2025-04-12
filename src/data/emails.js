@@ -1,0 +1,148 @@
+const emails = [
+  {
+    id: 12,
+    subject: "Welcome to FluffyMail 🐰",
+    body: "Hello there!\n\nWe’re so excited to have you in our cozy little corner of the internet. FluffyMail was designed with comfort and simplicity in mind, so you can enjoy a clutter-free inbox with a touch of bunny charm. Whether you’re sending important messages or just hopping in to say hi to a friend, we’ve got everything you need to make emailing feel warm and fuzzy.\n\nIf you ever need help, have suggestions, or just want to share your favorite type of carrot, we’re only a message away. Until then, enjoy fluffing up your folders and making this space your own.\n\nWarm wishes,\nThe FluffyMail Team 🐇",
+    date: "2025-04-11T10:32:00Z",
+    isRead: false,
+    sender: {
+      name: "FluffyMail Team",
+      email: "welcome@fluffymail.com",
+      avatar: "kawaii/kawaii-bunny",
+    },
+  },
+  {
+    id: 11,
+    subject: "Weekly Carrot Report 🥕",
+    body: "Your carrot stock is full and fresher than ever. We've just delivered a fresh batch straight to your inbox — crunchy, vibrant, and packed with that earthy sweetness every bunny loves.\n\nBe sure to check your delivery history and tag your favorite varieties so we can keep those munchies coming! Need to pause or modify your subscription? Hop into your settings anytime.",
+    date: "2025-04-10T09:15:00Z",
+    isRead: false,
+    sender: {
+      name: "Bunny Bot",
+      email: "noreply@veggiesupply.co",
+      avatar: "general/icons8-salad-100",
+    },
+  },
+  {
+    id: 10,
+    subject: "New Login Detected",
+    body: "We noticed a login from a new burrow. If this wasn't you, please burrow-proof your account.",
+    date: "2025-04-09T22:01:00Z",
+    isRead: false,
+    sender: {
+      name: "FluffyMail Security",
+      email: "security@fluffymail.com",
+      avatar: "general/icons8-forgot-password-100",
+    },
+  },
+  {
+    id: 9,
+    subject: "You’ve Got Mail from Cotton",
+    body: "Hi there! Just hopping by to say hello. Let’s catch up soon! 🐇",
+    date: "2025-04-08T13:47:00Z",
+    isRead: true,
+    sender: {
+      name: "Finn Mertens",
+      email: "finn.mertens@burrowmail.net",
+      avatar: "avatars/icons8-finn-100",
+    },
+  },
+  {
+    id: 8,
+    subject: "Spring Cleaning Tips 🌸",
+    body: "Keep your inbox fresh! Try archiving old messages and dusting off your folders.",
+    date: "2025-04-07T08:30:00Z",
+    isRead: true,
+    sender: {
+      name: "FluffyMail Tips",
+      email: "help@fluffymail.com",
+      avatar: "general/icons8-online-support-100",
+    },
+  },
+  {
+    id: 7,
+    subject: "🎁 Your Monthly Treat is Here!",
+    body: "You've unlocked a surprise reward: a digital carrot badge for inbox organization!",
+    date: "2025-04-06T11:05:00Z",
+    isRead: true,
+    sender: {
+      name: "Bunny Rewards",
+      email: "rewards@fluffymail.com",
+      avatar: "general/icons8-gift-100",
+    },
+  },
+  {
+    id: 6,
+    subject: "Delivery Notice: Soft Blankets Arriving Soon",
+    body: "Your order from Cozy Nest is on the way! 🧺 Estimated arrival: April 12.",
+    date: "2025-04-05T16:22:00Z",
+    isRead: true,
+    sender: {
+      name: "Cozy Nest Co.",
+      email: "orders@cozynest.store",
+      avatar: "general/icons8-gift-100",
+    },
+  },
+  {
+    id: 5,
+    subject: "Maintenance Notice 🧹",
+    body: "We’ll be burrowing into some backend improvements on April 13 between 1am–4am. Expect brief downtime.",
+    date: "2025-04-04T10:00:00Z",
+    isRead: true,
+    sender: {
+      name: "FluffyMail Support",
+      email: "support@fluffymail.com",
+      avatar: "general/icons8-online-support-100",
+    },
+  },
+  {
+    id: 4,
+    subject: "Invitation to the Burrow Book Club 📚",
+    body: "Join us this month as we read *The Velveteen Rabbit*. First meeting is April 15!",
+    date: "2025-04-03T18:45:00Z",
+    isRead: true,
+    sender: {
+      name: "Book Bunnies",
+      email: "club@burrowbooks.org",
+      avatar: "general/icons8-ibooks-100",
+    },
+  },
+  {
+    id: 3,
+    subject: "Reminder: Nest Security Check 🔐",
+    body: "Haven’t updated your password in a while? It’s a good time to refresh those credentials.",
+    date: "2025-04-02T07:30:00Z",
+    isRead: true,
+    sender: {
+      name: "Fluffy Security",
+      email: "security@fluffymail.com",
+      avatar: "general/icons8-forgot-password-100",
+    },
+  },
+  {
+    id: 2,
+    subject: "Inbox Survey — Share Your Fluff!",
+    body: "We’d love your feedback on the FluffyMail experience. It takes just 2 minutes!",
+    date: "2025-04-01T12:00:00Z",
+    isRead: true,
+    sender: {
+      name: "Fluffy Feedback",
+      email: "feedback@fluffymail.com",
+      avatar: "general/icons8-question-mark-100",
+    },
+  },
+  {
+    id: 1,
+    subject: "Your Inbox Looks Hoppy Today 🐇✨",
+    body: "Everything is sorted and tagged beautifully. You’re doing amazing!",
+    date: "2025-03-31T15:20:00Z",
+    isRead: true,
+    sender: {
+      name: "Burrow Assistant",
+      email: "bot@fluffymail.com",
+      avatar: "general/icons8-bot-100",
+    },
+  },
+];
+
+export default emails;

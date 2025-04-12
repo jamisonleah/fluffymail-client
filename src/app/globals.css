@@ -1,15 +1,35 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+@theme 
+{
+  --color-cotton-candy: #FAE3E5;
+  --color-bunny-blush: #F5CEDB;
+  --color-baby-pink: #F6DEE5; 
+  --color-strawberry-milk: #F2AFC1;
+  --color-blueberry-sky: #9AAFE9;
+  --color-blueberry-sky-hover: #788DC6; 
+  --color-night-sky: #4e6194;
+  --color-raspberry-jam: #CE8197;
+  --color-velvet-gray: #6E686B;
+  --color-berry-mauve: #A15776;
+  --font-lobster: "Lobster", serif; 
+  --font-livvic: "Livvic", sans; 
+  --font-lilita-one: "Lilita One", sans;
+
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-livvic);
+  --font-mono: var(--font-livvic);
+  --font-display: var(--font-lobster);
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +39,22 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: var(--color-baby-pink); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blueberry-sky);
+  border-radius: 10px;
+}
+
+
+
+
+
