@@ -1,4 +1,7 @@
+"use client";
 import Icon from "@/components/Icon"; // adjust path as needed
+import { useEmailView } from "@/app/client/handlers/emailViewHandler";
+
 
 export function SecondaryButton({ children, onClick, icon }) {
   return (
@@ -9,18 +12,33 @@ export function SecondaryButton({ children, onClick, icon }) {
       {icon && (
         <Icon name={icon} size={35} className="inline-block" />
       )}
-      
       <span className="">{children}</span>
     </button>
   );
 }
 
 
-export function PrimaryButton({ children, onClick, icon }) {
+export function PrimaryFolderButton({ children, onClick, icon, mailbox }) {
+  const { mailBox, setMailBox, setMode, setSelectedEmail } = useEmailView();
+  const handleModeChange = () => {
+    if (mailbox === "drafts") {
+      console.log("drafts");
+      setMode("edit");
+    }
+    else {
+      console.log("list");
+      setMode("list");
+    }
+    setMailBox(mailbox);
+    setSelectedEmail(null);
+  };
+
   return (
+
+    
     <button
-      className="w-full flex items-center gap-2 bg-baby-pink text-gray-800 px-3 py-1 rounded-lg shadow hover:bg-raspberry-jam"
-      onClick={onClick}
+      className={`w-full flex items-center gap-2 text-gray-800 px-3 py-1 rounded-lg shadow hover:bg-raspberry-jam ${mailBox===mailbox ? "bg-raspberry-jam" : "bg-baby-pink"}`}
+      onClick={() => handleModeChange()}
     >
       {icon && (
         <Icon name={icon} size={35} className="inline-block" />
@@ -41,16 +59,29 @@ export function TertiaryButton({ children, onClick }) {
   );
 }
 
-export function FolderButton({ children, onClick, icon }) {
+export function FolderButton({ children, onClick, icon, mailbox }) {
+  const { mailBox, setMailBox, setMode, setSelectedEmail } = useEmailView();
+  const handleModeChange = () => {
+    if (mailbox === "drafts") {
+      console.log("drafts");
+      setMode("edit");
+    }
+    else {
+      console.log("list");
+      setMode("list");
+    }
+    setMailBox(mailbox);
+    setSelectedEmail(null);
+  };
+  
   return (
     <button
-      className="w-full flex items-center gap-2 text-raspberry-jam px-3 rounded-lg hover:text-berry-mauve "
-      onClick={onClick}
+      className={`w-full flex items-center gap-2  px-3 rounded-lg hover:text-berry-mauve ${mailbox===mailbox ? "text-berry-mauve" : "text-raspberry-jam"}`}
+      onClick={() => handleModeChange()}
     >
       {icon && (
         <Icon name={`email-client/icons8-${icon}-folder-50`}  size={35} className="inline-block" />
       )}
-      
       <span className="">{children}</span>
     </button>
   );
